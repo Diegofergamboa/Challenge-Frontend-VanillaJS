@@ -54,6 +54,12 @@ body {
         position: relative;
         display: inline-flex;
     }
+    .character-name h2 {
+        text-align: left;
+        font-size: 50px;
+        position: relative;
+        display: inline-flex;
+    }
     .character-name::after {
         content: "";
         width: 30px;
