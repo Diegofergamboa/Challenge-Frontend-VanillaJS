@@ -1,7 +1,7 @@
 import API from './api.js'
 const api = new API();
 
-console.log(api.getCharacter(1));
+// console.log(api.getCharacter(1));
 
 const $characterContainer = document.querySelector('#characterContainer');
 
@@ -16,7 +16,7 @@ class Character {
         <article class="character">
         <div class="character-grid">
             <h2>${this.name}</h2>
-            <img src="${this.imagr}" alt="">
+            <img src="${this.image}" alt="">
         </div>
         </article>
         `
@@ -32,4 +32,5 @@ async function initApp(initCharacterId) {
     console.log(characterData)
     const rick = new Character(characterData);
 }
+
 initApp(1)

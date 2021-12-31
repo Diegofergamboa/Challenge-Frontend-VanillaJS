@@ -1,8 +1,23 @@
 body {
-    /* margin: 0; */
+    margin: 0;
     background-color: #00a5be;
+    font-family: monospace;
 }
 .logo {
     display: block;
     margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 2em;
+}
+
+.character {
+    font-size: 50px;
+}
+
+.character-name {
+    font-size: 50px;
 }
