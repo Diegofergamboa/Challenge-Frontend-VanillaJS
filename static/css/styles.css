@@ -5,7 +5,8 @@ body {
 }
 .logo {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 2em;
+    
 }
 
 .wrapper {
@@ -18,20 +19,41 @@ body {
     text-align: center;
 
 }
-.character-labels {
-    max-width: 300px;
-}
+
 .character-image {
-    max-width: 100%;
-    margin: 0 2em;
+    width: 100%;
+    border-radius: 50%;
+    /* margin: 0 -2em; */
 }
 .character-label {
     background-color: #685128;
     padding: 1em;
     color: white;
     border-radius: 10px;
-    display: inline-flex;
+    /* display: inline-flex; */
 }
 .character-name {
-    font-size: 50px;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    .character-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "name image" "labels avatar";
+    }
+    .character-image {
+        grid-area: name;
+        width: 300px;
+        border-radius: 50%;
+        /* margin: 0 -2em; */
+    }
+    .character-labels {
+        grid-area: labels;
+        max-width: 300px;
+    }
+
+    .character-image {
+        grid-area: image;
+    }
 }
