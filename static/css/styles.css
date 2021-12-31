@@ -50,17 +50,13 @@ body {
     }
     .character-name {
         text-align: left;
-        font-size: 50px;
-        position: relative;
-        display: inline-flex;
     }
     .character-name h2 {
-        text-align: left;
         font-size: 50px;
         position: relative;
         display: inline-flex;
     }
-    .character-name::after {
+    .character-name h2::after {
         content: "";
         width: 30px;
         height: 2px;
