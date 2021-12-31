@@ -21,6 +21,10 @@ body {
 .character-labels {
     max-width: 300px;
 }
+.character-image {
+    max-width: 100%;
+    margin: 0 2em;
+}
 .character-label {
     background-color: #685128;
     padding: 1em;
